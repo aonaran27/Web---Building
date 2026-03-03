@@ -3,16 +3,64 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Adding CSS</title>
+  <title>CSS Flag Project</title>
+  <style>
+    /* Write your CSS Code here */
+     .flag{
+      background-color: rgb(209, 32, 32);
+      width: 900px;
+      height: 600px;
+      position: relative;
+    }
+    .flag > div {
+      background-color: rgb(23, 23, 107);
+      width: 100%;
+      height: 300px;
+      position: absolute;
+      top: 150px;
+
+    }
+    .flag > div > div{
+      background-color: white;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      position: relative;
+      top: 50px;
+      left: 350px;
+
+    }
+    p{
+      margin: 0px;
+      text-align: center;
+      font-size: 5rem;
+      color: white;
+    }
+    body>div>div>div>p{
+      color: black;
+    }
+  </style>
 </head>
 
-<body>
-  <h1>Three Methods of Adding CSS</h1>
-  <!-- Create 3 Links to The 3 Webpages: inline, internal and external -->
-  <a href="./inline.html">Inline </a>
-  <a href="./internal.html">Internal</a>
-  <a href="./external.html">External</a>
+<!-- 
+  IMPORTANT! Do not change any HTML
+Don't add any classes/ids/elements 
+Use what you know about combining selectors 
+and CSS specificity instead.
+Hint 1: The flag is 900px by 600px and the circle is 200px by 200px.
+Hint 2: You can use CSS inspection to get the colors from
+https://appbrewery.github.io/flag-of-laos/
+-->
 
+<body>
+  <div class="flag">
+    <p>The Flag</p>
+    <div>
+      <div>
+        <p>of Laos</p>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
